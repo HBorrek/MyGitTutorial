@@ -1,0 +1,29 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf130
+{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\ftech\fcharset77 Symbol;}
+{\colortbl;\red255\green255\blue255;\red75\green172\blue198;\red112\green48\blue160;\red146\green208\blue80;
+\red51\green204\blue204;\red247\green150\blue70;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\pardirnatural\qc\partightenfactor0
+
+\f0\fs72 \cf0 Versionsverwaltung mit git\
+\pard\pardeftab720\sb91\pardirnatural\partightenfactor0
+
+\fs38 \cf0 Git dient zur Verwaltung der verschiedenen Versionen eines Projektes. Es erm\'f6glicht das gleichzeitige Arbeiten an verschiedenen Aspekten des Projekts und das strukturierte Zusammenf\'fchren der Ergebnisse. Durch das strukturierte Verwalten der Versionen ist es m\'f6glich den Verlauf der Projektbearbeitung und -entwicklung genau nach zu vollziehen.  \
+Die Besonderheit von Git ist die Zweigstruktur des Projektes: Anstatt eines \'84Master-Branch\'93                                                                            benutzt dieser Workflow zwei Zweige zum Speichern der \'84Projektgeschichte\'93 (\'e4lteren                                                                     Versionen). \
+\pard\pardeftab720\sb91\pardirnatural\partightenfactor0
+\cf2 Master-Branch  \cf0                                                                                                                 speichert die offizielle, ver\'f6ffentlichte \'84Geschichte\'93 (die Versionen).\
+\pard\pardeftab720\sb91\pardirnatural\partightenfactor0
+\cf3 Develop-Branch                                                                                                                      \cf0 dient als Integrations-Branch f\'fcr Funktionen (Features) und Eigenschaften.\
+\pard\pardeftab720\sb91\pardirnatural\partightenfactor0
+\cf4 Feature-Branch  \cf0                                                                                                                     \
+jedes neue Feature besitzt einen eigenen Feature-Zweig. Dieser kann f\'fcr ein Backup oder zur Zusammenarbeit in das zentrale Repository geschoben werden. Anstatt des Master-Branch verwendet der Feature-Branch den Develop-Branch als Eltern-Zweig. Ist das Feature komplett, verschmilzt es mit dem Develop-Zweig. Features sollten nie direkt mit dem Master-Branch interagieren.\
+\pard\pardeftab720\sb91\pardirnatural\partightenfactor0
+\cf5 Release-Branch\cf0                                                                                                                         \
+Wird vom Develop-Branch abgespalten, wenn gen\'fcgend neue Features f\'fcr eine Freigabe vorhanden sind. 
+\f1 \uc0\u8594 
+\f0  Start des Freigabe-Zyklus: Es k\'f6nnen keine neuen Features mehr hinzugef\'fcgt werden. Nur noch Fehlerbehebungen, Dokumentationen und andere freigabeorientierte Anwendungen. Ist alles soweit fertig bekommt die Freigabeversion eine Versionsnummer und wird mit dem Master-Branch verschmolzen. Zus\'e4tzlich sollte der Release-Branch auch zur\'fcck in den Develop-Branch gehen, der evtl. schon weiter bearbeitet wurde, seit dem die Freigabe gestartet wurde.     \
+\pard\pardeftab720\sb91\pardirnatural\partightenfactor0
+\cf6 Maintenance-Branch/ Hotfix-Branch                                                                                    \
+\pard\pardeftab720\sb91\pardirnatural\partightenfactor0
+\cf0 wird benutzt, um schnell Produktionsfreigaben aus zu bessern. Er ist der einzige Branch, der direkt vom Master-Branch abzweigt. Sobald die L\'f6sung komplett ist, sollte der Branch mit dem Master- und Develop-Branch (oder dem aktuellen Release-Branch) verschmelzen und im Master-Branch die neue Version mit einer Versionsnummer ausgezeichnet werden.}
